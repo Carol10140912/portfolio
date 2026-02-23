@@ -47,8 +47,7 @@ function loadAllProjects() {
     'projects/myfit.md',
     'projects/tcm-heat-care.md',
     'projects/medaesthetic-research.md',
-    'projects/health-checkup-industry.md',
-    'projects/pharma-consult-intern.md'
+    'projects/health-checkup-industry.md'
   ];
 
   const container = document.getElementById('content');
