@@ -102,10 +102,10 @@ function loadAllProjects() {
   container.innerHTML = '';
   container.className = 'cards'; 
 
-  // 并行加载所有文件
+  // 并行加载所有文件，添加时间戳避免缓存
   Promise.all(projectFiles.map(file => 
-    fetch(file).then(res => {
-      if (!res.ok) throw new Error(`Failed to load ${file}`);
+    fetch(`${file}?v=${Date.now()}`).then(res => {
+      if (!res.ok) throw new Error(`Failed to load ${file}: ${res.status} ${res.statusText}`);
       return res.text();
     })
   ))
