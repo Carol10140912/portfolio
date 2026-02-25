@@ -2,15 +2,17 @@
    基础设置与排版 (Typography & Reset)
 --------------------------- */
 :root {
-  --primary-color: #0077BE;      /* 医疗蓝：体现信任与科技感 */
-  --secondary-color: #2E8B57;    /* 清新绿：辅助健康元素 */
-  --bg-color: #F5F7FA;           /* 浅灰背景：保持简洁 */
-  --text-primary: #333333;       /* 深灰：高对比度正文 */
-  --text-secondary: #555555;     /* 次级文本 */
-  --border-color: #E0E0E0;       /* 分割线 */
+  --primary-color: #2A9D8F;      /* 柔和薄荷绿：健康与平静 */
+  --secondary-color: #FF7F50;    /* 温暖珊瑚橙：活力与亲和 */
+  --bg-color: #FDFBF7;           /* 暖米色背景：温润舒适 */
+  --text-primary: #4A4A4A;       /* 深暖灰：柔和阅读体验 */
+  --text-secondary: #7A7A7A;     /* 浅暖灰 */
+  --border-color: #E8E0D5;       /* 暖色调分割线 */
   --card-bg: #FFFFFF;            /* 卡片背景 */
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
-  --shadow-hover: 0 12px 24px rgba(0, 119, 190, 0.1);
+  --radius-lg: 24px;             /* 大圆角：亲和力 */
+  --radius-md: 16px;             /* 中圆角 */
+  --shadow-sm: 0 4px 16px rgba(42, 157, 143, 0.08);
+  --shadow-hover: 0 12px 32px rgba(255, 127, 80, 0.15);
 }
 
 html, body {
@@ -18,7 +20,7 @@ html, body {
   padding: 0;
   background: var(--bg-color);
   color: var(--text-primary);
-  font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Nunito', 'Rounded Mplus 1c', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
@@ -214,26 +216,28 @@ h2::after {
 --------------------------- */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
+  padding: 16px 0;
 }
 
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   padding: 32px;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px) scale(1.02);
   box-shadow: var(--shadow-hover);
-  border-color: var(--primary-color);
+  border-color: var(--secondary-color);
 }
 
 /* 卡片头部：图标与标题 */
@@ -244,17 +248,24 @@ h2::after {
 }
 
 .card-icon {
-  width: 48px;
-  height: 48px;
-  background: rgba(0, 119, 190, 0.1);
-  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  background: rgba(42, 157, 143, 0.1);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 16px;
+  margin-right: 20px;
   color: var(--primary-color);
-  font-size: 20px;
+  font-size: 24px;
   flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-icon {
+  background: var(--primary-color);
+  color: #fff;
+  transform: rotate(15deg);
 }
 
 .card-title {
@@ -316,42 +327,108 @@ h2::after {
   margin-bottom: 8px;
 }
 
+/* ---------------------------
+   Markdown 内容排版优化 (MyFit Style)
+--------------------------- */
+.card-details {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.card-details h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 40px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  border-left: 6px solid var(--secondary-color); /* 珊瑚橙色块点缀 */
+  border-bottom: none;
+  background: linear-gradient(to right, rgba(255, 127, 80, 0.05), transparent);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 0 8px 8px 0;
+}
+
+.card-details h2::after {
+  display: none;
+}
+
+.card-details h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding-left: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.card-details ul, .card-details ol {
+  padding: 24px 24px 24px 40px;
+  margin-bottom: 24px;
+  background: #FAFAFA;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.card-details li {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+  position: relative;
+}
+
+.card-details p {
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.card-details strong {
+  color: var(--secondary-color); /* 强调色使用珊瑚橙 */
+  font-weight: 600;
+}
+
 /* 引用块样式 (Blockquote) */
 .card-details blockquote {
   margin: 24px 0;
-  padding: 16px 24px;
-  background-color: #F8FBFF;
+  padding: 20px 32px;
+  background-color: rgba(42, 157, 143, 0.05); /* 薄荷绿背景 */
   border-left: 4px solid var(--primary-color);
-  border-radius: 0 4px 4px 0;
-  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
   font-style: italic;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 
 .card-details blockquote p {
   margin: 0;
   font-size: 15px;
+  color: var(--text-primary);
 }
 
 /* 展开/收起按钮 */
 .card-toggle {
   margin-top: auto;
   align-self: flex-start;
-  background: transparent;
-  border: 1px solid var(--primary-color);
+  background: rgba(42, 157, 143, 0.1);
+  border: none;
   color: var(--primary-color);
-  padding: 8px 20px;
-  border-radius: 4px;
+  padding: 10px 24px;
+  border-radius: 24px;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  font-weight: 600;
+  transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
 }
 
 .card-toggle:hover {
   background: var(--primary-color);
-  color: #FFFFFF;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(42, 157, 143, 0.2);
 }
 
 .card-toggle i {
