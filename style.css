@@ -477,116 +477,207 @@ h2::after {
 }
 
 .gallery-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  border: 1px solid #F0F0F0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 119, 190, 0.15);
-  border-color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
-  aspect-ratio: 9/19.5; /* 适配 iPhone 截图比例 */
-  object-fit: cover;
   display: block;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .gallery-caption {
-  padding: 12px 8px;
+  padding: 12px;
+  text-align: center;
   font-size: 14px;
-  color: var(--text-primary);
+  color: var(--text-secondary);
+  background: #fafafa;
   font-weight: 500;
-  background: #FAFAFA;
-  width: 100%;
-  border-top: 1px solid #F0F0F0;
 }
 
 /* 响应式调整 */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .project-gallery {
-    grid-template-columns: repeat(2, 1fr); /* 平板端2列 */
+    grid-template-columns: repeat(3, 1fr); /* 平板/小屏桌面 3列 */
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .project-gallery {
-    grid-template-columns: 1fr; /* 移动端1列 */
-    gap: 32px;
+    grid-template-columns: repeat(2, 1fr); /* 平板竖屏 2列 */
   }
-  
-  .gallery-item {
-    max-width: 320px; /* 限制最大宽度，避免图片过大 */
-    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .project-gallery {
+    grid-template-columns: 1fr; /* 手机端单列 */
   }
 }
 
 /* ---------------------------
-   联系方式 (Contact)
+   中医自发热护理产品展示 (TCM Heat Care Style)
+   "学术深度、人文温度、中医智慧与现代简洁"
 --------------------------- */
-.contact {
-  text-align: center;
+.tcm-content {
+  --tcm-bg: #FCF8F0;          /* 米白背景 */
+  --tcm-primary: #C97C5D;     /* 陶土橙：主色 */
+  --tcm-secondary: #8B5A2B;   /* 当归棕：辅色 */
+  --tcm-accent: #9CAF88;      /* 草药绿：点缀 */
+  --tcm-text: #4A4A4A;        /* 深灰文本 */
+  --tcm-border: #F0EAE1;      /* 浅木色边框 */
+  
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  color: var(--tcm-text);
+  padding: 16px;
+  background-color: rgba(252, 248, 240, 0.3); /* 极淡的米色背景 */
+  border-radius: 16px;
 }
 
-.contact-items {
-  display: inline-flex;
-  flex-direction: column;
+/* 标题样式 */
+.tcm-content h2 {
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-size: 22px; /* 调整为与 MyFit 一致 */
+  font-weight: 700;
+  color: var(--tcm-primary);
+  margin-top: 48px;
+  margin-bottom: 32px;
+  padding-left: 0;
+  border-left: none;
+  border-bottom: 2px solid var(--tcm-primary);
+  background: none;
+  padding-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.tcm-content h3 {
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-size: 18px; /* 调整为与 MyFit 一致 */
+  font-weight: 600;
+  color: var(--tcm-secondary);
+  margin-top: 32px;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 4px solid var(--tcm-accent);
+}
+
+/* 列表样式 */
+.tcm-content ul {
+  list-style: none;
+  padding: 0;
+  background: transparent;
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
-  margin-top: 16px;
-  align-items: center;
 }
 
-.contact-item {
-  font-size: 16px;
-  color: var(--text-secondary);
+.tcm-content li {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  border: 1px solid var(--tcm-border);
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
-.contact-item a {
-  color: var(--primary-color);
-  text-decoration: none;
+.tcm-content li strong {
+  color: var(--tcm-primary);
+  margin-right: 8px;
+  font-weight: 600;
+  min-width: 80px;
+}
+
+/* 引用块样式 */
+.tcm-content blockquote {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--tcm-secondary);
+  background-color: #FDFBF7;
+  border-left: 4px solid var(--tcm-primary);
+  border-radius: 8px;
+  padding: 32px;
+  margin: 40px 0;
+  box-shadow: 0 8px 24px rgba(201, 124, 93, 0.08);
+  font-style: italic;
+}
+
+.tcm-content blockquote p {
+  color: var(--tcm-secondary);
+  font-size: 1.2rem;
+}
+
+/* 图片展示区域 */
+.tcm-content .project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 桌面端 2列 */
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.tcm-content .gallery-item {
+  background: #FCF8F0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+  border: none;
+}
+
+.tcm-content .gallery-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.1);
+}
+
+.tcm-content .gallery-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-bottom: none;
+}
+
+.tcm-content .gallery-caption {
+  background: transparent;
+  color: var(--tcm-primary);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
   font-weight: 500;
+  padding: 16px;
+  letter-spacing: 1px;
 }
 
-.contact-item a:hover {
-  text-decoration: underline;
+/* 正文段落 */
+.tcm-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--tcm-text);
+  margin-bottom: 24px;
 }
 
-/* ---------------------------
-   移动端适配 (Mobile)
---------------------------- */
-@media (max-width: 640px) {
-  .hero-name {
-    font-size: 36px;
-  }
-  
-  .cards {
+/* 响应式 */
+@media (max-width: 600px) {
+  .tcm-content .project-gallery {
     grid-template-columns: 1fr;
   }
   
-  .section {
-    padding: 80px 0;
-  }
-  
-  .method-list li {
-    flex-direction: column;
-  }
-  
-  .method-list li span {
-    margin-bottom: 8px;
-  }
-
-  .nav {
-    display: none; /* 简化：移动端暂时隐藏导航，或需另加汉堡菜单 */
+  .tcm-content ul {
+    grid-template-columns: 1fr;
   }
 }

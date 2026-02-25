@@ -1,13 +1,36 @@
 ---
-title: 基于中医经典名方机制的头部自发热护理产品设计
+title: 北京市优秀毕业设计-基于中医经典名方机制的头部自发热护理产品设计
 ---
-围绕经典名方的温通机制，将医学原理转译为自发热护理产品的结构化方案，在北京市优秀毕业论文框架下完成从机制到产品的落地与验证。
+<div class="tcm-content">
+
+将医学原理转译为自发热护理产品的结构化方案，完成从机制到产品的落地与验证。
 
 ## 结构化要点
 
-- **北京市优秀毕业论文**：以规范研究路径开展全流程验证  
+
 - **机制转译**：将“温通”“疏络”等机制抽象为材料与结构参数  
 - **验证路径**：实验室热特性、主观体验与安全性评估形成闭环  
+
+## 产品展示
+
+<div class="project-gallery">
+  <div class="gallery-item">
+    <img src="projects/images/tcm-heat/3D渲染效果正面图.png" alt="3D渲染效果正面图">
+    <div class="gallery-caption">3D渲染效果正面图</div>
+  </div>
+  <div class="gallery-item">
+    <img src="projects/images/tcm-heat/3D渲染效果侧面图.png" alt="3D渲染效果侧面图">
+    <div class="gallery-caption">3D渲染效果侧面图</div>
+  </div>
+  <div class="gallery-item">
+    <img src="projects/images/tcm-heat/样品内部安装自发热片.png" alt="样品内部安装自发热片">
+    <div class="gallery-caption">样品内部安装自发热片</div>
+  </div>
+  <div class="gallery-item">
+    <img src="projects/images/tcm-heat/患者戴上自发热护理帽.png" alt="患者戴上自发热护理帽">
+    <div class="gallery-caption">患者戴上自发热护理帽</div>
+  </div>
+</div>
 
 ## 项目背景：当我第一次尝试，把“方剂”变成“产品”
 
@@ -57,4 +80,6 @@ title: 基于中医经典名方机制的头部自发热护理产品设计
 - 构建头痛触发数据模型
 - 结合AI做个性化护理建议
 
-但那个大三的我，已经做了一件对我来说足够重要的事：她完成了第一次“医学 → 产品”的转化。  
+但那个大三的我，已经做了一件对我来说足够重要的事：她完成了第一次“医学 → 产品”的转化。
+
+</div>  

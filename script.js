@@ -52,7 +52,7 @@ function createCard(title, html) {
   if (firstP) {
     summaryText = firstP.textContent;
     // 从临时DOM中移除第一段，剩下的作为详情
-    tempDiv.removeChild(firstP);
+    firstP.remove();
   }
 
   const summaryDiv = document.createElement('div');
