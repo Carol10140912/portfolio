@@ -9,6 +9,12 @@ title: 情绪陪伴体重管理小程序
 - **AI干预触发机制**：结合时间窗与事件窗口判定触发时机，避免过度提醒  
 - **合规过滤逻辑**：对建议的医疗相关表述进行敏感词与合规规则过滤，确保内容审核通过  
 
+## 产品界面展示
+
+| 首页 (Home) | 记录 (Record) | 报告 (Report) | 我的 (Mine) |
+| :---: | :---: | :---: | :---: |
+| <img src="projects/images/myfit/home.png" width="200" alt="首页"> | <img src="projects/images/myfit/record.png" width="200" alt="记录"> | <img src="projects/images/myfit/report.png" width="200" alt="报告"> | <img src="projects/images/myfit/mine.png" width="200" alt="我的"> |
+
 ## 项目背景与洞察
 
 在公共卫生学习过程中，我逐渐意识到体重管理失败的核心原因并非缺乏知识，而是长期行为难以维持。现有健康管理产品以数据记录为主，却忽视了用户在不同阶段的情绪波动与心理变化。
