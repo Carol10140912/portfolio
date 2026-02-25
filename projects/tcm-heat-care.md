@@ -8,26 +8,26 @@ title: 北京市优秀毕业设计-基于中医经典名方机制的头部自发
 ## 结构化要点
 
 
-- **机制转译**：将“温通”“疏络”等机制抽象为材料与结构参数  
-- **验证路径**：实验室热特性、主观体验与安全性评估形成闭环  
+- **机制转译**将“温通”“疏络”等机制抽象为材料与结构参数  
+- **验证路径**实验室热特性、主观体验与安全性评估形成闭环  
 
 ## 产品展示
 
 <div class="project-gallery">
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/3D渲染效果正面图.png" alt="3D渲染效果正面图" loading="lazy">
+    <img src="projects/images/tcm-heat/3D%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C%E6%AD%A3%E9%9D%A2%E5%9B%BE.png" alt="3D渲染效果正面图" loading="lazy">
     <div class="gallery-caption">3D渲染效果正面图</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/3D渲染效果侧面图.png" alt="3D渲染效果侧面图" loading="lazy">
+    <img src="projects/images/tcm-heat/3D%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C%E4%BE%A7%E9%9D%A2%E5%9B%BE.png" alt="3D渲染效果侧面图" loading="lazy">
     <div class="gallery-caption">3D渲染效果侧面图</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/样品内部安装自发热片.png" alt="样品内部安装自发热片" loading="lazy">
+    <img src="projects/images/tcm-heat/%E6%A0%B7%E5%93%81%E5%86%85%E9%83%A8%E5%AE%89%E8%A3%85%E8%87%AA%E5%8F%91%E7%83%AD%E7%89%87.png" alt="样品内部安装自发热片" loading="lazy">
     <div class="gallery-caption">样品内部安装自发热片</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/患者戴上自发热护理帽.png" alt="患者戴上自发热护理帽" loading="lazy">
+    <img src="projects/images/tcm-heat/%E6%82%A3%E8%80%85%E6%88%B4%E4%B8%8A%E8%87%AA%E5%8F%91%E7%83%AD%E6%8A%A4%E7%90%86%E5%B8%BD.png" alt="患者戴上自发热护理帽" loading="lazy">
     <div class="gallery-caption">患者戴上自发热护理帽</div>
   </div>
 </div>
