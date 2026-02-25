@@ -15,19 +15,19 @@ title: 北京市优秀毕业设计-基于中医经典名方机制的头部自发
 
 <div class="project-gallery">
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/3D渲染效果正面图.png" alt="3D渲染效果正面图">
+    <img src="projects/images/tcm-heat/3D渲染效果正面图.png" alt="3D渲染效果正面图" loading="lazy">
     <div class="gallery-caption">3D渲染效果正面图</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/3D渲染效果侧面图.png" alt="3D渲染效果侧面图">
+    <img src="projects/images/tcm-heat/3D渲染效果侧面图.png" alt="3D渲染效果侧面图" loading="lazy">
     <div class="gallery-caption">3D渲染效果侧面图</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/样品内部安装自发热片.png" alt="样品内部安装自发热片">
+    <img src="projects/images/tcm-heat/样品内部安装自发热片.png" alt="样品内部安装自发热片" loading="lazy">
     <div class="gallery-caption">样品内部安装自发热片</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/患者戴上自发热护理帽.png" alt="患者戴上自发热护理帽">
+    <img src="projects/images/tcm-heat/患者戴上自发热护理帽.png" alt="患者戴上自发热护理帽" loading="lazy">
     <div class="gallery-caption">患者戴上自发热护理帽</div>
   </div>
 </div>
