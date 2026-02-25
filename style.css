@@ -389,6 +389,73 @@ h2::after {
 }
 
 /* ---------------------------
+   产品展示区域 (Project Gallery)
+--------------------------- */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 桌面端默认4列 */
+  gap: 20px;
+  margin: 32px 0;
+  width: 100%;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #F0F0F0;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 119, 190, 0.15);
+  border-color: var(--primary-color);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9/19.5; /* 适配 iPhone 截图比例 */
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-caption {
+  padding: 12px 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+  background: #FAFAFA;
+  width: 100%;
+  border-top: 1px solid #F0F0F0;
+}
+
+/* 响应式调整 */
+@media (max-width: 900px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 平板端2列 */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-gallery {
+    grid-template-columns: 1fr; /* 移动端1列 */
+    gap: 32px;
+  }
+  
+  .gallery-item {
+    max-width: 320px; /* 限制最大宽度，避免图片过大 */
+    margin: 0 auto;
+  }
+}
+
+/* ---------------------------
    联系方式 (Contact)
 --------------------------- */
 .contact {

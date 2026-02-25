@@ -11,9 +11,24 @@ title: 情绪陪伴体重管理小程序
 
 ## 产品界面展示
 
-| 首页 (Home) | 记录 (Record) | 报告 (Report) | 我的 (Mine) |
-| :---: | :---: | :---: | :---: |
-| <img src="projects/images/myfit/home.png" width="200" alt="首页"> | <img src="projects/images/myfit/record.png" width="200" alt="记录"> | <img src="projects/images/myfit/report.png" width="200" alt="报告"> | <img src="projects/images/myfit/mine.png" width="200" alt="我的"> |
+<div class="project-gallery">
+  <div class="gallery-item">
+    <img src="projects/images/myfit/home.png" alt="首页">
+    <div class="gallery-caption">首页</div>
+  </div>
+  <div class="gallery-item">
+    <img src="projects/images/myfit/record.png" alt="记录">
+    <div class="gallery-caption">记录</div>
+  </div>
+  <div class="gallery-item">
+    <img src="projects/images/myfit/report.png" alt="报告">
+    <div class="gallery-caption">报告</div>
+  </div>
+  <div class="gallery-item">
+    <img src="projects/images/myfit/mine.png" alt="我的">
+    <div class="gallery-caption">我的</div>
+  </div>
+</div>
 
 ## 项目背景与洞察
 
