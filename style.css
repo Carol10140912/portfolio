@@ -497,10 +497,15 @@ h2::after {
 
 .gallery-item img {
   width: 100%;
-  height: 220px; /* 固定高度确保整齐 */
+  height: auto;
   display: block;
   object-fit: cover;
   border-bottom: 1px solid var(--border-color);
+}
+
+/* TCM项目画廊专用样式 */
+.tcm-gallery .gallery-item img {
+  height: 220px; /* 固定高度确保整齐 */
 }
 
 .gallery-item.contain-image img {

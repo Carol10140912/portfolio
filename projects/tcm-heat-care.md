@@ -13,7 +13,7 @@ title: 北京市优秀毕业设计-基于中医经典名方机制的头部自发
 
 ## 产品展示
 
-<div class="project-gallery">
+<div class="project-gallery tcm-gallery">
   <div class="gallery-item">
     <img src="projects/images/tcm-heat/3d-render-front.png" alt="3D渲染效果正面图" loading="lazy">
     <div class="gallery-caption">3D渲染效果正面图</div>
