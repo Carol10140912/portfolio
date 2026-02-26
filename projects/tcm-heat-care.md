@@ -15,20 +15,24 @@ title: 北京市优秀毕业设计-基于中医经典名方机制的头部自发
 
 <div class="project-gallery">
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/3D%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C%E6%AD%A3%E9%9D%A2%E5%9B%BE.png" alt="3D渲染效果正面图" loading="lazy">
+    <img src="projects/images/tcm-heat/3d-render-front.png" alt="3D渲染效果正面图" loading="lazy">
     <div class="gallery-caption">3D渲染效果正面图</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/3D%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C%E4%BE%A7%E9%9D%A2%E5%9B%BE.png" alt="3D渲染效果侧面图" loading="lazy">
+    <img src="projects/images/tcm-heat/3d-render-side.png" alt="3D渲染效果侧面图" loading="lazy">
     <div class="gallery-caption">3D渲染效果侧面图</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/%E6%A0%B7%E5%93%81%E5%86%85%E9%83%A8%E5%AE%89%E8%A3%85%E8%87%AA%E5%8F%91%E7%83%AD%E7%89%87.png" alt="样品内部安装自发热片" loading="lazy">
+    <img src="projects/images/tcm-heat/sample-internal.png" alt="样品内部安装自发热片" loading="lazy">
     <div class="gallery-caption">样品内部安装自发热片</div>
   </div>
   <div class="gallery-item">
-    <img src="projects/images/tcm-heat/%E6%82%A3%E8%80%85%E6%88%B4%E4%B8%8A%E8%87%AA%E5%8F%91%E7%83%AD%E6%8A%A4%E7%90%86%E5%B8%BD.png" alt="患者戴上自发热护理帽" loading="lazy">
+    <img src="projects/images/tcm-heat/patient-wearing.png" alt="患者戴上自发热护理帽" loading="lazy">
     <div class="gallery-caption">患者戴上自发热护理帽</div>
+  </div>
+  <div class="gallery-item">
+    <img src="projects/images/tcm-heat/certificate.jpg" alt="北京市优秀毕业论文证书" loading="lazy">
+    <div class="gallery-caption">北京市优秀毕业论文证书</div>
   </div>
 </div>
 
