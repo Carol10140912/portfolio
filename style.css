@@ -539,6 +539,14 @@ h2::after {
   .project-gallery {
     grid-template-columns: 1fr; /* 手机端单列 */
   }
+
+  /* 手机端取消 TCM 画廊的固定高度，让图片自然展示，避免被压缩太小或裁剪 */
+  .tcm-gallery .gallery-item img {
+    height: auto;
+    max-height: 400px; /* 限制最大高度，防止竖图过长 */
+    object-fit: contain; /* 手机端尽量完整显示内容 */
+    background-color: #fafafa;
+  }
 }
 
 /* ---------------------------
