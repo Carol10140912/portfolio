@@ -497,10 +497,15 @@ h2::after {
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 220px; /* 固定高度确保整齐 */
   display: block;
   object-fit: cover;
   border-bottom: 1px solid var(--border-color);
+}
+
+.gallery-item.contain-image img {
+  object-fit: contain; /* 证书等需要完整显示的图片 */
+  background-color: #fafafa; /* 填充背景色 */
 }
 
 .gallery-caption {

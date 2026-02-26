@@ -30,7 +30,7 @@ title: 北京市优秀毕业设计-基于中医经典名方机制的头部自发
     <img src="projects/images/tcm-heat/patient-wearing.png" alt="患者戴上自发热护理帽" loading="lazy">
     <div class="gallery-caption">患者戴上自发热护理帽</div>
   </div>
-  <div class="gallery-item">
+  <div class="gallery-item contain-image">
     <img src="projects/images/tcm-heat/certificate.jpg" alt="北京市优秀毕业论文证书" loading="lazy">
     <div class="gallery-caption">北京市优秀毕业论文证书</div>
   </div>
